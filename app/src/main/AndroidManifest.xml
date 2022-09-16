@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rachel.s1t1mobileapp2">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.S1T1Mobileapp2"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".activity_Admin.adm_add_artikel"
+            android:exported="false" />
+        <activity
+            android:name=".activity_Admin.adm_addUser"
+            android:exported="false" />
+        <activity
+            android:name=".activity_Admin.dashboard_adm"
+            android:exported="false" />
+        <activity
+            android:name=".activity_Dosen.kehadiran_dsn"
+            android:exported="false" />
+        <activity
+            android:name=".activity_Dosen.nilai_dsn"
+            android:exported="false" />
+        <activity
+            android:name=".activity_Dosen.profile_dsn"
+            android:exported="false" />
+        <activity
+            android:name=".activity_Dosen.Dashboard_dsn"
+            android:exported="false" />
+        <activity
+            android:name=".activity_Mahasiswa.keuangan_mhs"
+            android:exported="false" />
+        <activity
+            android:name=".activity_Mahasiswa.jadwal_mhs"
+            android:exported="false" />
+        <activity
+            android:name=".activity_Mahasiswa.progress_tugas"
+            android:exported="false" />
+        <activity
+            android:name=".activity_Mahasiswa.nilai_mhs"
+            android:exported="false" />
+        <activity
+            android:name=".activity_Mahasiswa.kehadiran_mhs"
+            android:exported="false" />
+        <activity
+            android:name=".activity_Mahasiswa.profile_mhs"
+            android:exported="false" />
+        <activity
+            android:name=".activity_Mahasiswa.Dashboard_mhs"
+            android:exported="false" />
+        <activity
+            android:name=".activity.Login"
+            android:exported="false" />
+        <activity
+            android:name=".activity.splashscreen_activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

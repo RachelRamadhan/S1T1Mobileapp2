@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_Admin.adm_addUser">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/defbg"
+            android:orientation="vertical">
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginRight="16dp">
+                    <Button
+                        android:id="@+id/btn_close"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/keluar"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="REGISTER USER"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="15dp"/>
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="5dp"
+                android:layout_margin="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp">
+                    <EditText
+                        android:id="@+id/edt_add_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="20dp"
+                        android:padding="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:hint="nama" />
+
+                    <EditText
+                        android:id="@+id/edt_add_nim"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:hint="nim" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="30dp"
+                        android:paddingTop="10dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:text="Kelas :"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="15sp"/>
+                        <Spinner
+                            android:id="@+id/spn_pilih_kelas"
+                            android:layout_width="204dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:padding="10dp"
+                            android:layout_gravity="center_vertical"
+                            android:entries="@array/kelas_array"/>
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/edt_add_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:hint="password" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="30dp"
+                        android:paddingTop="10dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pilih Role :"
+                            android:layout_gravity="center_vertical"
+                            android:textSize="15sp"/>
+                        <Spinner
+                            android:id="@+id/spn_add_role"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:padding="10dp"
+                            android:layout_gravity="center_vertical"
+                            android:entries="@array/role_array"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_addUser"
+                        android:layout_width="210dp"
+                        android:layout_height="40dp"
+                        android:layout_margin="15dp"
+                        android:layout_gravity="center_horizontal"
+                        android:text="add user"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

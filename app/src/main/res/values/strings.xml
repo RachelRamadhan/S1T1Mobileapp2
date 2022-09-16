@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">S1T1Mobileapp2</string>
+
+    //login activity
+    <string name="masuk"> LOGIN</string>
+    <string name="buatakun"> REGISTER</string>
+    <string name="hyperlink"><a href="https://ittelkom-jkt.ac.id/">About ITTJ</a></string>
+    <string name="hyperlink2"><a href="https://ittelkom-jkt.ac.id/">Igracias ITTJ</a></string>
+
+
+    //Dashboard Mahasiswa
+    <string name="profilenama_mahasiswa">Nama Mahasiswa</string>
+    <string name="profilenim_mahasiswa">Nim Mahasiswa</string>
+    <string name="HomeScreen">DASHBOARD</string>
+
+    //Dashboard Dosen
+    <string name="nama_dosen">Nama Dosen</string>
+    <string name="nidn_dosen">NIDN Dosen</string>
+    <array name="role_array">
+        <item>pilih role</item>
+        <item>mahasiswa</item>
+        <item>dosen</item>
+        <item>admin</item>
+    </array>
+    <array name="kelas_array">
+        <item>pilih kelas</item>
+        <item>20 TI 1</item>
+        <item>20 TI 2</item>
+        <item>21 TI 1</item>
+        <item>21 TI 2</item>
+    </array>
+    <array name="semester_array">
+        <item>pilih semester</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </array>
+
+
+    //navmenu
+    <string name="TentangProdi">Tentang Prodi</string>
+    <string name="pengaturan">Pengaturan</string>
+    <string name="logout_mhs">Keluar</string>
+    <string name="logout_dsn">Keluar</string>
+
+
+</resources>
